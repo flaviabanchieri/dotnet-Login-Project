@@ -1,6 +1,6 @@
 ﻿namespace PsiicApi.Model
 {
-	public class Atendimento
+	public class Atendimento : Entity<int, Atendimento>
 	{
 		public DateTime DataHora { get; private set; }
 		public decimal Valor { get; private set; }

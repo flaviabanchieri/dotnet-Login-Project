@@ -1,6 +1,6 @@
 ﻿namespace PsiicApi.Model
 {
-	public class Financeiro
+	public class Financeiro : Entity<int, Financeiro>
 	{
 		public decimal Valor { get; private set; }
 		public string? Descricao { get; private set; }
