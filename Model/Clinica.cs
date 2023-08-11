@@ -2,7 +2,7 @@
 
 namespace PsiicApi.Model
 {
-	public class Clinica
+	public class Clinica : Entity<int, Clinica>
 	{
 		public string Nome { get; private set; }
 		public string Logo { get; private set; }
