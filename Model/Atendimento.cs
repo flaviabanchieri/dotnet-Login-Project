@@ -12,5 +12,10 @@
 		public int ClinicaId { get; private set; }
 		public virtual Cliente Cliente { get; private set; }
 		public virtual Clinica Clinica { get; private set; }
-	}
+
+        public override bool Validar()
+        {
+            throw new NotImplementedException();
+        }
+    }
 }

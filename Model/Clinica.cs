@@ -17,5 +17,9 @@ namespace PsiicApi.Model
 		public virtual List<Cliente> Clientes { get; private set; }
 		public virtual List<Financeiro> Financeiro { get; private set; }
 
-	}
+        public override bool Validar()
+        {
+            throw new NotImplementedException();
+        }
+    }
 }

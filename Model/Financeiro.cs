@@ -14,5 +14,10 @@
 		public virtual Cliente Cliente { get; private set; }
 		public int AtendimentoId { get; private set; }
 		public virtual Atendimento Atendimento { get; private set; }
-	}
+
+        public override bool Validar()
+        {
+            throw new NotImplementedException();
+        }
+    }
 }

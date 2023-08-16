@@ -43,8 +43,35 @@ namespace PsiicApi.Model
 		public int EnderecoId { get; private set; }
 		public virtual Endereco Endereco { get; private set; }
 
+		public Usuario(string nomeUsuario, string senha, string email, string nome, string sobrenome, string fotoPerfil, string biografia, DateTime dataNascimento, bool ativo, DateTime? dataUltimoLogin, List<Contato> contatos, List<Clinica> clinicas, int clinicaId, Clinica clinica, int permissaoId, Permissoes permissoes, int enderecoId, Endereco endereco)
+        {
+            NomeUsuario = nomeUsuario;
+            Senha = senha;
+            Email = email;
+            Nome = nome;
+            Sobrenome = sobrenome;
+            FotoPerfil = fotoPerfil;
+            Biografia = biografia;
+            DataNascimento = dataNascimento;
+            Ativo = ativo;
+            DataUltimoLogin = dataUltimoLogin;
+            Contatos = contatos;
+            Clinicas = clinicas;
+            ClinicaId = clinicaId;
+            Clinica = clinica;
+            PermissaoId = permissaoId;
+            Permissoes = permissoes;
+            EnderecoId = enderecoId;
+            Endereco = endereco;
+        }
 
-		public override bool Validar()
+		public Usuario(string nome, string nomeUsuario)
+		{
+			Nome = nome;
+			NomeUsuario = nomeUsuario;
+		}
+
+        public override bool Validar()
 		{
 			throw new NotImplementedException();
 		}
